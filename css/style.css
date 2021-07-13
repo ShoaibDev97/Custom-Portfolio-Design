@@ -7,14 +7,15 @@ html {
   box-sizing: border-box;
 }
 body {
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-family: "Montserrat", sans-serif !important;
 }
 .Folio,
 .Port {
-  font-family: "Courier New", Courier, monospace;
-  letter-spacing: 0.4rem;
-  font-weight: 600;
-  font-size: 1.7rem;
+  /* font-family: "Courier New", Courier, monospace; */
+  color: rgb(255, 147, 6);
+  /* letter-spacing: 0.4rem; */
+  /* font-weight: 600; */
+  font-size: 1.5rem;
 }
 .Folio {
   color: rgb(255, 147, 6);
@@ -60,12 +61,11 @@ h2 {
 .header {
   width: 100%;
   height: 100vh;
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)),
-    url("../img/bg1.jpg");
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("../img/bg1.jpg");
   background-repeat: no-repeat;
   background-size: 100% 100%;
   position: relative;
-  clip-path: polygon(100% 0, 100% 0, 100% 87%, 0 100%, 0 0);
+  /* clip-path: polygon(100% 0, 100% 0, 100% 87%, 0 100%, 0 0); */
 }
 .header:before {
   content: "";
@@ -113,20 +113,29 @@ h2 {
 .header-botton a {
   border: 2px solid rgb(255, 147, 6);
   margin: 0 5px;
-  border-radius: 10px;
+  /* border-radius: 10px; */
   padding: 12px 25px;
   color: rgb(255, 147, 6);
   font-size: 1rem;
   line-height: 1.4;
-  font-weight: 600;
+  /* font-weight: 600; */
   text-align: center;
+  transition: 0.5s ease-in-out;
 }
 .header-botton a:hover {
   color: white;
-  border: 2px solid rgb(255, 147, 6);
-  background-color: rgba(255, 147, 6, 0.7);
+
+  border: 2px solid white;
+  /* background-color: rgba(255, 147, 6, 0.7); */
   text-decoration: none;
   box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.3);
+}
+
+@media (max-width: 300px) {
+  .header-botton a {
+    display: block;
+    margin-top: 15px;
+  }
 }
 
 .center-div p {
@@ -156,16 +165,17 @@ h2 {
 .extra-div h2 {
   text-transform: uppercase;
   font-size: 1.4rem;
-  color: grey;
-
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  color: rgb(255, 147, 6);
 }
 .extra-div p {
-  color: grey;
+  color: #090909;
   font-weight: 300;
   text-align: justify;
 }
 
+.extra-div {
+  box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.2);
+}
 .extra-div:hover {
   box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.3);
   transform: translateY(-20px);
@@ -217,6 +227,8 @@ h2 {
 .project-work h1 {
   font-size: 2rem;
   text-align: center;
+  color: rgb(255, 147, 6);
+  font-weight: bold;
 }
 
 .pricing {
@@ -235,7 +247,7 @@ h2 {
   right: 0%;
 
   z-index: -1;
-  background: linear-gradient(150deg, rgb(255, 147, 6, 0.7) 55%, #fff 0);
+  background: linear-gradient(150deg, rgb(255, 147, 6) 55%, #fff 0);
 }
 
 .money {
@@ -248,6 +260,7 @@ h2 {
   transition: 0.4s ease;
 }
 .card-header {
+  color: rgb(255, 147, 6);
   font-size: 1.6rem;
   font-weight: bold;
   background: white !important;
@@ -365,7 +378,7 @@ h2 {
 }
 
 .nav-animation {
-  margin: 10px;
+  /* margin: 10px; */
   padding: 10px !important;
   font-weight: 500 !important;
 }
@@ -377,13 +390,13 @@ h2 {
 .top-heading {
   text-transform: uppercase;
   font-weight: 700 !important;
-  font-size: 2.2rem;
+  font-size: 2.5em;
   color: rgb(255, 147, 6);
 }
 
 .headings h1 {
-  color: gray;
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  color: rgb(255, 147, 6);
+  font-weight: bold;
 }
 .headings p {
   color: gray;
@@ -395,7 +408,6 @@ h2 {
   text-transform: uppercase;
   color: gray;
   margin-top: 10px;
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 
 .service-icon {
@@ -404,8 +416,8 @@ h2 {
   align-items: center;
 }
 .offer-heading {
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   font-size: 1.3rem;
+  color: rgb(255, 147, 6);
 }
 .service-icon > i {
   color: rgb(255, 147, 6);
@@ -413,7 +425,6 @@ h2 {
 
 .showoff {
   color: grey;
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 
 .count {
@@ -443,8 +454,8 @@ h2 {
   height: 50vh;
 }
 .about-wrapper {
-  background-color: rgba(240, 123, 7, 0.7);
-  box-shadow: 0px 0px 10px 0px orange;
+  background-color: rgba(240, 123, 8, 0.9);
+  font-family: "Montserrat", sans-serif !important;
   color: white;
   padding: 50px;
   margin-left: -150px;
@@ -452,12 +463,12 @@ h2 {
 .about-wrapper h1,
 .about-wrapper p {
   color: white;
+  font-weight: bold;
 }
 
 .about-wrapper p {
-  font-family: sans-serif;
   font-weight: 500;
-  color: black;
+  color: white;
 }
 .about-wrap {
   display: flex;
@@ -486,8 +497,8 @@ h2 {
 .contact {
   margin-top: 50px;
   width: 100%;
-  height: 4vh;
-  background-color: rgb(253, 147, 8);
+
+  background-color: rgb(253, 147, 6);
 }
 
 .icons-footer {
@@ -518,7 +529,24 @@ div.fixed {
 }
 .fixed-wrap {
   padding: 5px;
-  border: 2px solid grey;
-
+  border: 2px solid peachpuff;
   border-radius: 50%;
 }
+.fixed-wrap i {
+  color: peachpuff;
+}
+
+/* Updated CSS  START */
+.navigaiton-bar {
+  background-color: #2e2e2e;
+  border-bottom: 2px solid rgb(253, 147, 8);
+}
+
+/* Style the active class (and buttons on mouse-over) */
+.active,
+.btn:hover {
+  background-color: rgb(253, 147, 8);
+  color: white;
+}
+
+/* Updated CSS  END*/
